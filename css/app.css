@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+body {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+====================
+      KEYFRAMES
+====================
+*/
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes move-down {
+  0% { transform: translateY(-20%); }
+  100% { transform: translateY(0); }
+}
+/*
+=======================
+      IMAGES & TEXT
+=======================
+*/
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 10% 0;
+  font-size: 22px;
+}
+
+section {
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+  margin: 5%;
+  padding: 2% 0;
+  animation: 
+    fade-in .5s ease-in,
+    move-down 1s ease-out;
+}
+
+img {
+  max-width: 50%;
+  border-radius: 5px;
+  display: block;
+  margin: 5% auto 0 auto;
+}
+
+ul {
+  margin: 2% auto 5% auto;
+  width: 67%
+}
+
+li {
+  list-style-type: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/*
+==============
+  BUTTON
+==============
+*/
+
+button {
+  font-weight: 200;
+  padding: 10px;
+  border: none;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 15px;
+  transition: .3s;
+  letter-spacing: 1.5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(34, 34, 34);
+  color: rgb(172, 172, 172);
+  transform: scale(.90);
+}
+
+
+/*
+===========================
+      MEDIA QUERIES
+===========================
+*/
+
+@media screen and (min-width:525px){
+  #photos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 5% 0;
+  }
+
+  ul {
+    width: 71%;
+  }
+}
+
+@media screen and (min-width:1000px){
+  #photos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 35px;
+    margin: 4% 0;
+  }
+}
