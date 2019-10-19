@@ -32,7 +32,7 @@ function generateHTML(data){
 }
 
 
-btn.addEventListener('click', (event)=> {
+btn.addEventListener('click', (event) => {
   event.target.textContent = 'Loading...'
 
   getJSON(marsRoverURL)
