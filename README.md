@@ -7,6 +7,8 @@ is basic information about the image.
 
 [View the live demo](https://mars-rover-api.herokuapp.com/index.html)
 
+If you would like to view my portfolio, [Click here](https://jasonpallone.com)
+
 To run this project on your PC follow the steps below.
 
 1. Clone this repo to your PC using git clone.
