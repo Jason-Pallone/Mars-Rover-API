@@ -19,6 +19,6 @@ To run this project on your PC follow the steps below.
 2. Go to this projects directory location on your PC.
 3. Open the directory, right click the HTML file and select "Open with"
 4. Then select your preferred broswer.
-5. The game should now be up and running on your PC in your preferred browser window.
+5. The project should now be up and running on your PC in your preferred browser window.
 
 Thanks for checking out my project!
